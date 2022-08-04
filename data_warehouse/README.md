@@ -41,6 +41,10 @@ I've created data model of star schema optimized for queries on song play analys
 * DB_USER master admin user and its password in DB_PASSWORD
 * DB_PORT is default 5439
 
+### to access redshift cluster remotely from your local machine steps 
+* 1- Make cluster public from marking cluster and choose actions --> `modify public accessible settings`
+* 2- Make inbounding ip address of your local machine to make Amazon Redshift accept traffic from your local machine by choosing my ip and custom TCP.
+
 
 ### ETL Pipeline
 + Created tables on redshift to store the data from `S3 bucket`.
