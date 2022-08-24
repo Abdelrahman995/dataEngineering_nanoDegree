@@ -51,10 +51,9 @@ aws emr create-cluster --name spark_cluster_test \
 In addition to the data files, the project workspace includes 5 files:
 
 **1. dl.cfg**                      Contains the Secret Key for AWS access [Configurations] <br>
-**2. create_bucket.py**            Create bucket in AWS S3 to store the extracted dimentional tables.<br>
-**3. etl.py**                      Loading song data and log data from S3 to Spark, transforms data into a set of dimensional tables, then save the table back to S3 <br>
-**4. etl.ipynb**                   Used to design ETL pipelines <br>
-**5. README.md**                   Provides project info<br>
+**2. etl.py**                      Loading song data and log data from S3 to Spark, transforms data into a set of dimensional tables, then save the table back to S3 <br>
+**3. etl.ipynb**                   Used to design ETL pipelines <br>
+**4. README.md**                   Provides project info<br>
 
 
 
