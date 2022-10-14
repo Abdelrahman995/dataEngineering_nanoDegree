@@ -33,7 +33,8 @@ log_data/2018/11/2018-11-12-events.json
 log_data/2018/11/2018-11-13-events.json
 ```
 
-**DAG**
+# DAG
+
 ![DAG graph](imgs/dag.png)
 
 # Execution
