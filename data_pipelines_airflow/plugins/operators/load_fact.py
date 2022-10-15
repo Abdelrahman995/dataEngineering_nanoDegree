@@ -28,9 +28,6 @@ class LoadFactOperator(BaseOperator):
     def execute(self, context):
         redshift = PostgresHook(postgres_conn_id=self.redshift_conn_id)
 
-        self.log.info("Truncating Redshift table")
-        redshift.run("DELETE FROM {}".format(self.table))
-
         formatted_sql = LoadFactOperator.insert_sql.format(
             self.table,
             self.sql_source

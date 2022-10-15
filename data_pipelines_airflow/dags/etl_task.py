@@ -88,14 +88,13 @@ load_time_dimension_table = LoadDimensionOperator(
 run_quality_checks = DataQualityOperator(
     task_id='run_data_quality_checks',
     redshift_conn_id="redshift",
-    table="time",
+    dq_checks  =[{'check_sql':'SELECT COUNT(*) FROM time ;' , 'expected_result': 1000}]
     dag=dag
 )
 
 end_operator = DummyOperator(task_id='Stop_execution',  dag=dag)
 
-start_operator >> stage_events_to_redshift
-start_operator >> stage_songs_to_redshift
+start_operator >> [stage_events_to_redshift , stage_songs_to_redshift]
 stage_events_to_redshift >> load_songplays_table
 stage_songs_to_redshift >> load_songplays_table
 load_songplays_table >> load_user_dimension_table
