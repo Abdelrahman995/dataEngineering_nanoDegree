@@ -46,7 +46,7 @@ The technology used in this project is Amazon S3, Apache Sparkw. Data will be re
 ## Step 3: Define the Data Model
 ### 3.1 Conceptual Data Model
 
-![Database schema](conceptual_model.png)
+![Database schema](images/data_model.png)
 
 The country dimension table is made up of data from the global land temperatures by city and the immigration datasets. The combination of these two datasets allows analysts to study correlations between global land temperatures and immigration patterns to the US.
 
