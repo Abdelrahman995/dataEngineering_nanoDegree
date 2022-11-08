@@ -44,7 +44,7 @@ The technology used in this project is Amazon S3, Apache Sparkw. Data will be re
 > Refer to the jupyter notebook for exploratory data analysis
 
 ## Step 3: Define the Data Model
-### 3.1 Conceptual Data Model
+### 3.1 Data Model
 
 ![Database schema](images/data_model.png)
 
