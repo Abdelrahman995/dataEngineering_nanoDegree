@@ -193,3 +193,5 @@ What If?
  * The data was increased by 100x: the processing is using pyspark so we can increase number of nodes (instances) which by means scalling the cluster up.
  * The data populates a dashboard that must be updated on a daily basis by 7am every day: Using apache Airflow to do the ETL pipelines then we can create a views so it could be auto refreshed on the tables on RedShift
  * The database needed to be accessed by 100+ people: by using scalable datawarehouse like Redshift so we can scale and serve more clients.
+* As we see from the plot chart that those are top 10 product categories prices in The Ecommerce Olise store, more queries and analytic team could use the data and model for
+  doing better analysis.
