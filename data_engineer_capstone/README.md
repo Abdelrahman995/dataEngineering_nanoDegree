@@ -145,6 +145,7 @@
 #### Star Schema model:
 
 <p align="center">
+
 * Dimension tables:- 
     * customer_dim 
     * order_payments_dim    
@@ -155,6 +156,7 @@
     * order_item_dim
 * Fact table:-     
     * order_trx_fact
+    
 </p>
 
 <p align="center">
