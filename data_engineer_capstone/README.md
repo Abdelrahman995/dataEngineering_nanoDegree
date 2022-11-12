@@ -169,8 +169,16 @@
         ,order_date_key,product_dim,seller_dm,order_item_dim
     3- creating fact table: order_trx_fact
     4- Doing the transformations needed on the dataframes to structure the tables
-    5- loading to s3 bucket as parquet files.
+    5- loading to s3 bucket as parquet files. Or even we can load directly to redshift but, we better use staging layer S3 as backup files and better loading.
 
+
+### Analysis
+
+<p align="center">
+  <img src="images/analytic_query.png" />
+</p>
+
+* As we see that those are top 10 product categories prices in The Ecommerce Olise store
 
 ### Data Quality 
     By checking in Redshift total number of records for each table if it < 1 so tables are empty so we can trigger an action later.

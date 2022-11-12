@@ -6,18 +6,18 @@ config = configparser.ConfigParser()
 config.read('dwh.cfg')
 
 # DROP TABLES
-customer_dim_drop = "DROP TABLE IF EXISTS customer_dim"
-order_payments_dim_drop = "DROP TABLE IF EXISTS order_payments_dim"
-order_review_dim_drop = "DROP TABLE IF EXISTS order_review_dim"
-order_date_key_dim_drop = "DROP TABLE IF EXISTS order_date_key_dim"
-products_dim_drop = "DROP TABLE IF EXISTS products_dim"
-seller_dim_drop = "DROP TABLE IF EXISTS seller"
-order_item_dim_drop = "DROP TABLE IF EXISTS order_item"
-orders_trx_fact_drop = "DROP TABLE IF EXISTS orders_trx_fact"
+customer_dim_drop = "DROP TABLE IF EXISTS public.customer_dim"
+order_payments_dim_drop = "DROP TABLE IF EXISTS public.order_payments_dim"
+order_review_dim_drop = "DROP TABLE IF EXISTS public.order_review_dim"
+order_date_key_dim_drop = "DROP TABLE IF EXISTS public.order_date_key_dim"
+products_dim_drop = "DROP TABLE IF EXISTS public.products_dim"
+seller_dim_drop = "DROP TABLE IF EXISTS public.seller"
+order_item_dim_drop = "DROP TABLE IF EXISTS public.order_item"
+orders_trx_fact_drop = "DROP TABLE IF EXISTS public.orders_trx_fact"
 
 # CREATE TABLES
 customer_dim_create= ("""
-    CREATE TABLE IF NOT EXISTS customer_dim
+    CREATE TABLE IF NOT EXISTS public.customer_dim
     (
         customer_key          INTEGER PRIMARY KEY SORTKEY,
         customer_id            INTEGER,
@@ -29,7 +29,7 @@ customer_dim_create= ("""
 """)
 
 order_payments_dim_create = ("""
-    CREATE TABLE IF NOT EXISTS order_payments_dim
+    CREATE TABLE IF NOT EXISTS public.order_payments_dim
     (
         payment_key             INTEGER PRIMARY KEY SORTKEY,
         order_id               INTEGER,
@@ -41,18 +41,18 @@ order_payments_dim_create = ("""
 """)
 
 order_review_dim_create = ("""
-    CREATE TABLE IF NOT EXISTS order_review_dim
+    CREATE TABLE IF NOT EXISTS public.order_review_dim
     (
-        review_key    INTEGER PRIMARY KEY SORTKEY,
-        review_id     TIMESTAMP NOT NULL SORTKEY,
-        order_id        TEXT NOT NULL DISTKEY,
+        review_key    INTEGER PRIMARY KEY,
+        review_id     TIMESTAMP NOT NULL,
+        order_id        TEXT NOT NULL,
         review_creation_date          TEXT,
         review_answer_timestamp        TIMESTAMP
-    ) diststyle key;
+    );
 """)
 
 order_date_key_dim_create = ("""
-    CREATE TABLE IF NOT EXISTS order_date_key_dim
+    CREATE TABLE IF NOT EXISTS public.order_date_key_dim
     (
         date_key     INTEGER PRIMARY KEY SORTKEY,
         order_purchase_timestamp  TEXT,
@@ -60,11 +60,11 @@ order_date_key_dim_create = ("""
         order_delivered_carrier_date      TEXT,
         order_delivered_customer_date      TEXT,
         order_estimated_delivery_date       TEXT
-    ) diststyle key;
+    );
 """)
 
 products_dim_create = ("""
-    CREATE TABLE IF NOT EXISTS products_dim
+    CREATE TABLE IF NOT EXISTS public.products_dim
     (
         product_key     INTEGER PRIMARY KEY SORTKEY,
         product_id       TEXT,
@@ -81,7 +81,7 @@ products_dim_create = ("""
 """)
 
 seller_dim_create = ("""
-    CREATE TABLE IF NOT EXISTS seller_dim
+    CREATE TABLE IF NOT EXISTS public.seller_dim
     (
         seller_key  INTEGER PRIMARY KEY SORTKEY,
         seller_id        INTEGER,
@@ -94,7 +94,7 @@ seller_dim_create = ("""
 
 
 order_item_dim_create = ("""
-    CREATE TABLE IF NOT EXISTS order_item_dim
+    CREATE TABLE IF NOT EXISTS public.order_item_dim
     (
         order_item_key  INTEGER PRIMARY KEY SORTKEY,
         order_id        INTEGER,
@@ -106,7 +106,7 @@ order_item_dim_create = ("""
 
 
 orders_trx_fact_create = ("""
-    CREATE TABLE IF NOT EXISTS orders_trx_fact
+    CREATE TABLE IF NOT EXISTS public.orders_trx_fact
     (
         trx_key  INTEGER PRIMARY KEY SORTKEY,
         customer_key        INTEGER,
