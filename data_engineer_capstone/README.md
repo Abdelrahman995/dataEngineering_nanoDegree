@@ -34,8 +34,9 @@
  <tr><td class="tg-0pky">customer_zip_code_prefix</td><td class="tg-0pky">zip code</td>
  <tr><td class="tg-0pky">customer_city</td><td class="tg-0pky">customer city</td>
  <tr><td class="tg-0pky">customer_state</td><td class="tg-0pky">customer state</td>
-</table>
-___
+</table><br />
+
+
 
 
 <b><i>Order items data</i></b>
@@ -52,8 +53,9 @@ ___
  <tr><td class="tg-0pky">shipping_limit_date</td><td class="tg-0pky">seller shipping limit date</td>
  <tr><td class="tg-0pky">price</td><td class="tg-0pky">item price</td>
  <tr><td class="tg-0pky">freight_value</td><td class="tg-0pky">freight</td>
-</table>
-___
+</table><br />
+
+
 
 
 <b><i>Order payments data</i></b>
@@ -67,8 +69,9 @@ ___
  <tr><td class="tg-0pky">payment_sequential</td><td class="tg-0pky">sequention num of payment</td>
  <tr><td class="tg-0pky">payment_installments</td><td class="tg-0pky">number of months to installment</td>
  <tr><td class="tg-0pky">payment_value</td><td class="tg-0pky">Value or amount of payment</td>
-</table>
-___
+</table><br />
+
+
 
 <b><i>Order Reviews data</i></b>
 
@@ -84,8 +87,9 @@ ___
  <tr><td class="tg-0pky">review_comment_message</td><td class="tg-0pky">Comment message</td>
  <tr><td class="tg-0pky">review_creation_date</td><td class="tg-0pky">date satisfaction survey sent to customer</td>
  <tr><td class="tg-0pky">review_answer_timestamp</td><td class="tg-0pky">satisfaction survey answer timestamp</td>
-</table>
-___
+</table><br />
+
+
 
 <b><i>Order data</i></b>
 
@@ -102,8 +106,9 @@ ___
  <tr><td class="tg-0pky">order_delivered_carrier_date</td><td class="tg-0pky">order posting timestamp</td>
  <tr><td class="tg-0pky">order_delivered_customer_date</td><td class="tg-0pky">Shows the actual order delivery date to the customer</td>
  <tr><td class="tg-0pky">order_estimated_delivery_date</td><td class="tg-0pky">Shows the estimated delivery date</td>
-</table>
-___
+</table><br />
+
+
 
 <b><i>products data</i></b>
 
@@ -121,8 +126,9 @@ ___
  <tr><td class="tg-0pky">product_length_cm</td><td class="tg-0pky">product length measured in centimeters.</td>
  <tr><td class="tg-0pky">product_height_cm</td><td class="tg-0pky">product height measured in centimeters.</td>
  <tr><td class="tg-0pky">product_width_cm</td><td class="tg-0pky">product width measured in centimeters.</td>
-</table>
-___
+</table><br />
+
+
 
 <b><i>sellers data</i></b>
 
@@ -135,8 +141,9 @@ ___
  <tr><td class="tg-0pky">seller_zip_code_prefix</td><td class="tg-0pky">first 5 digits of seller zip code</td>
  <tr><td class="tg-0pky">seller_city</td><td class="tg-0pky">seller city name</td>
  <tr><td class="tg-0pky">seller_state</td><td class="tg-0pky">seller state</td>
-</table>
-___
+</table><br />
+
+
 
 
 <b><i>translations lookup data</i></b>
@@ -148,8 +155,7 @@ ___
   </tr>
  <tr><td class="tg-0pky">product_category_name</td><td class="tg-0pky">category name in Portuguese</td>
  <tr><td class="tg-0pky">product_category_name_english</td><td class="tg-0pky">category name in English</td>
-</table>
-___
+</table><br />
 
 
 ### Explorations (preprocessing steps)
