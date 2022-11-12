@@ -23,8 +23,8 @@
 * product_category_name_translation.csv --> Category Name Translation to ENG
 
 
-<b><i>customers data</i></b>
-<table class="tg" align="left">
+<p align="center">customers data</p>
+<table class="tg" align="center">
   <tr>
     <th class="tg-0pky">Column</th>
     <th class="tg-0pky">Description</th>
@@ -36,12 +36,8 @@
  <tr><td class="tg-0pky">customer_state</td><td class="tg-0pky">customer state</td>
 </table><br />
 
-
-
-
-<b><i>Order items data</i></b>
-
-<table class="tg" align="left">
+<p align="center">Order items data</p>
+<table class="tg" align="center">
   <tr>
     <th class="tg-0pky">Column</th>
     <th class="tg-0pky">Description</th>
@@ -55,12 +51,8 @@
  <tr><td class="tg-0pky">freight_value</td><td class="tg-0pky">freight</td>
 </table><br />
 
-
-
-
-<b><i>Order payments data</i></b>
-
-<table class="tg" align="left">
+<p align="center">Order payments data</p>
+<table class="tg" align="center">
   <tr>
     <th class="tg-0pky">Column</th>
     <th class="tg-0pky">Description</th>
@@ -71,11 +63,8 @@
  <tr><td class="tg-0pky">payment_value</td><td class="tg-0pky">Value or amount of payment</td>
 </table><br />
 
-
-
-<b><i>Order Reviews data</i></b>
-
-<table class="tg" align="left">
+<p align="center">Order Reviews data</p>
+<table class="tg" align="center">
   <tr>
     <th class="tg-0pky">Column</th>
     <th class="tg-0pky">Description</th>
@@ -89,11 +78,8 @@
  <tr><td class="tg-0pky">review_answer_timestamp</td><td class="tg-0pky">satisfaction survey answer timestamp</td>
 </table><br />
 
-
-
-<b><i>Order data</i></b>
-
-<table class="tg" align="left">
+<p align="center">Order data</p>
+<table class="tg" align="center">
   <tr>
     <th class="tg-0pky">Column</th>
     <th class="tg-0pky">Description</th>
@@ -108,11 +94,8 @@
  <tr><td class="tg-0pky">order_estimated_delivery_date</td><td class="tg-0pky">Shows the estimated delivery date</td>
 </table><br />
 
-
-
-<b><i>products data</i></b>
-
-<table class="tg" align="left">
+<p align="center">products data</p>
+<table class="tg" align="center">
   <tr>
     <th class="tg-0pky">Column</th>
     <th class="tg-0pky">Description</th>
@@ -128,11 +111,8 @@
  <tr><td class="tg-0pky">product_width_cm</td><td class="tg-0pky">product width measured in centimeters.</td>
 </table><br />
 
-
-
-<b><i>sellers data</i></b>
-
-<table class="tg" align="left">
+<p align="center">sellers data</p>
+<table class="tg" align="center">
   <tr>
     <th class="tg-0pky">Column</th>
     <th class="tg-0pky">Description</th>
@@ -144,11 +124,8 @@
 </table><br />
 
 
-
-
-<b><i>translations lookup data</i></b>
-
-<table class="tg" align="left">
+<p align="center">translations lookup data</p>
+<table class="tg" align="center">
   <tr>
     <th class="tg-0pky">Column</th>
     <th class="tg-0pky">Description</th>
