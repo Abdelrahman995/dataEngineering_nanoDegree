@@ -24,7 +24,6 @@
 
 
 <b><i>customers data</i></b>
-
 <table class="tg" align="left">
   <tr>
     <th class="tg-0pky">Column</th>
@@ -36,6 +35,7 @@
  <tr><td class="tg-0pky">customer_city</td><td class="tg-0pky">customer city</td>
  <tr><td class="tg-0pky">customer_state</td><td class="tg-0pky">customer state</td>
 </table>
+___
 
 
 <b><i>Order items data</i></b>
@@ -53,6 +53,7 @@
  <tr><td class="tg-0pky">price</td><td class="tg-0pky">item price</td>
  <tr><td class="tg-0pky">freight_value</td><td class="tg-0pky">freight</td>
 </table>
+___
 
 
 <b><i>Order payments data</i></b>
@@ -67,6 +68,7 @@
  <tr><td class="tg-0pky">payment_installments</td><td class="tg-0pky">number of months to installment</td>
  <tr><td class="tg-0pky">payment_value</td><td class="tg-0pky">Value or amount of payment</td>
 </table>
+___
 
 <b><i>Order Reviews data</i></b>
 
@@ -83,6 +85,7 @@
  <tr><td class="tg-0pky">review_creation_date</td><td class="tg-0pky">date satisfaction survey sent to customer</td>
  <tr><td class="tg-0pky">review_answer_timestamp</td><td class="tg-0pky">satisfaction survey answer timestamp</td>
 </table>
+___
 
 <b><i>Order data</i></b>
 
@@ -100,6 +103,7 @@
  <tr><td class="tg-0pky">order_delivered_customer_date</td><td class="tg-0pky">Shows the actual order delivery date to the customer</td>
  <tr><td class="tg-0pky">order_estimated_delivery_date</td><td class="tg-0pky">Shows the estimated delivery date</td>
 </table>
+___
 
 <b><i>products data</i></b>
 
@@ -118,6 +122,7 @@
  <tr><td class="tg-0pky">product_height_cm</td><td class="tg-0pky">product height measured in centimeters.</td>
  <tr><td class="tg-0pky">product_width_cm</td><td class="tg-0pky">product width measured in centimeters.</td>
 </table>
+___
 
 <b><i>sellers data</i></b>
 
@@ -131,6 +136,7 @@
  <tr><td class="tg-0pky">seller_city</td><td class="tg-0pky">seller city name</td>
  <tr><td class="tg-0pky">seller_state</td><td class="tg-0pky">seller state</td>
 </table>
+___
 
 
 <b><i>translations lookup data</i></b>
@@ -143,6 +149,7 @@
  <tr><td class="tg-0pky">product_category_name</td><td class="tg-0pky">category name in Portuguese</td>
  <tr><td class="tg-0pky">product_category_name_english</td><td class="tg-0pky">category name in English</td>
 </table>
+___
 
 
 ### Explorations (preprocessing steps)
